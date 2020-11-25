@@ -15,6 +15,11 @@ class Rock:
             return True
         
         return False
+    
+    def color(self, col):
+        self.color = col
+        print('This', self.type, 'rock is', col)
+       
     '''
     honestly don't know what I was tryna do, proabably talk about
     prehistoric periods, but eh delete it if you can't salvage it
