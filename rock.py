@@ -21,7 +21,7 @@ class Rock:
     
     def period(self):
         if self.age
-    '''
+    
     def subType(self):
         if self.type.casefold() == 'igneous':
             print("Extrusive or Intrusive rocks")
@@ -33,10 +33,19 @@ class Rock:
             print('Foliated and Unfoliated')
         else:
             print('Unfortunately, there is no subtype found')
-
+    '''
 class Igneous(Rock):
-    def __init__(self, age, subType):
+    def __init__(self, age=None):
         super.__init__('igneous', age)
         self.subTypes = ['Extrusive', 'Intrusive']
-
+        
+class Sedimentary(Rock):
+    def __init__(self, age=None):
+        super.__init__('sedimentary', age)
+        self.subTypes = ['Organic', 'Clastic', 'Chemical']
+        
+class Metamorphic(Rock):
+    def __init__(self, age=None):
+        super.__init__('metamorphic', age)
+        self.subTypes = ['Foliated', 'Unfoliated']
     
